@@ -1,8 +1,11 @@
 import 'package:core_engine/iplug.dart';
+import 'package:core_anime/iplug.dart';
 
 class PluginManager{
 
-  static PlugRender getPlugRender(){
+  PlugAnime pluginAnime;
+
+  static void mixPlug(IPlugIn iplugin, IPlugOut iplugout){
     return new PlugRender();
   }
 

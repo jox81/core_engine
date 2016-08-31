@@ -1,10 +1,28 @@
-abstract class IPlug{
+abstract class IPlugIn{
+  bool sendOut();
 }
 
-class PlugRender extends IPlug{
-
+abstract class IPlugOut{
+  bool checkIn(IPlugIn iPlugIn);
 }
 
-class PlugAnime extends IPlug{
+//class PlugRender implements IPlugIn, IPlugOut{
+//
+//}
 
+class PlugCore implements IPlugIn, IPlugOut{
+
+  @override
+  bool checkIn(IPlugIn iPlugIn) {
+    if(iPlugIn is PlugCore) return false;
+
+    return true;
+  }
+
+  @override
+  bool checkOut(IPlugOut iPlugOut) {
+    if(iPlugOut is PlugCore) return false;
+
+    return true;
+  }
 }
