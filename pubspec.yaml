@@ -1,0 +1,11 @@
+name: 'core_engine'
+version: 0.0.1
+
+environment:
+  sdk: '>=1.0.0 <2.0.0'
+
+dependencies:
+  test:
+  anime_engine:
+      git:
+          url: https://github.com/jox81/anime_engine.git
