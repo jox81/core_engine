@@ -1,11 +1,18 @@
 name: 'core_engine'
 version: 0.0.1
+description: Core framework
 
 environment:
   sdk: '>=1.0.0 <2.0.0'
 
 dependencies:
-  test:
   anime_engine:
       git:
           url: https://github.com/jox81/anime_engine.git
+
+dev_dependencies:
+  test:
+
+dependency_overrides:
+  anime_engine:
+    path: ../anime_engine

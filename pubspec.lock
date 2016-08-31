@@ -9,10 +9,9 @@ packages:
     version: "0.28.1"
   anime_engine:
     description:
-      ref: HEAD
-      resolved-ref: f941930ee692db0c7cd28bc7d7a6945cbc453829
-      url: "https://github.com/jox81/anime_engine.git"
-    source: git
+      path: "..\\anime_engine"
+      relative: true
+    source: path
     version: "0.0.1"
   args:
     description:
