@@ -10,9 +10,11 @@ dependencies:
       git:
           url: https://github.com/jox81/anime_engine.git
 
-dev_dependencies:
-  test:
-
 dependency_overrides:
   anime_engine:
     path: ../anime_engine
+
+dev_dependencies:
+  test:
+
+
